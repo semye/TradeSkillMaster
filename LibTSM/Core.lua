@@ -6,14 +6,11 @@
 
 -- This is loaded before anything else and simply sets up the addon table
 
-print("开始加载TSM....",ADDON_NAME)
-print("=====>",...)
 local ADDON_NAME, TSM = ...
-print("开始加载TSM....",ADDON_NAME)
-print("开始加载TSM....",TSM)
 -- 魔兽自带函数 从toc文件中获取值
 local VERSION_RAW = GetAddOnMetadata("TradeSkillMaster", "Version")
-local IS_DEV_VERSION = true 
+local IS_DEV_VERSION = true
+-- 声明私有的对象集合
 local private = {
 	context = {},
 	initOrder = {},
@@ -211,6 +208,7 @@ function private.UnloadAll()
 	end
 end
 
+-- 处理回调结果
 function private.OnEvent(_, event, arg)
 	if event == "ADDON_LOADED" and arg == ADDON_NAME and not private.gotAddonLoaded then
 		assert(not private.gotAddonLoaded and not private.gotPlayerLogin and not private.gotPlayerLogout)
@@ -247,11 +245,13 @@ end
 -- ============================================================================
 -- Initialization Code
 -- ============================================================================
-
+-- do end 用法 局部变量
 do
 	private.frame = CreateFrame("Frame")
+	-- 监听事件回调
 	private.frame:RegisterEvent("ADDON_LOADED")
 	private.frame:RegisterEvent("PLAYER_LOGIN")
 	private.frame:RegisterEvent("PLAYER_LOGOUT")
+	-- 设置脚本
 	private.frame:SetScript("OnEvent", private.OnEvent)
 end

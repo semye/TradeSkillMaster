@@ -19,6 +19,7 @@ External\EmbeddedLibs\LibRealmInfo\LibRealmInfo.lua
 External\EmbeddedLibs\LibSerialize\LibSerialize.lua
 
 # Our core init file
+# 初始化加载
 LibTSM\Core.lua
 
 # 1st-party libraries
@@ -140,13 +141,11 @@ Core\UI\UI.lua
 Core\UI\Scrollbar.lua
 Core\UI\FrameStack.lua
 Core\UI\WhatsNew.lua
-
 Core\UI\Util\Core.lua
 Core\UI\Util\Contacts.lua
 Core\UI\Util\TableRow.lua
 Core\UI\Util\ScrollingTableInfo.lua
 Core\UI\Util\QueryScrollingTableInfo.lua
-
 Core\UI\Elements\Element.lua
 Core\UI\Elements\Text.lua
 Core\UI\Elements\Button.lua
@@ -167,7 +166,6 @@ Core\UI\Elements\PlayerGoldText.lua
 Core\UI\Elements\EditableText.lua
 Core\UI\Elements\Texture.lua
 Core\UI\Elements\Spacer.lua
-
 Core\UI\Elements\Container.lua
 Core\UI\Elements\Frame.lua
 Core\UI\Elements\PopupFrame.lua
@@ -180,7 +178,6 @@ Core\UI\Elements\Toggle.lua
 Core\UI\Elements\ToggleOnOff.lua
 Core\UI\Elements\DividedContainer.lua
 Core\UI\Elements\CollapsibleContainer.lua
-
 Core\UI\Elements\ScrollingTable.lua
 Core\UI\Elements\GroupTree.lua
 Core\UI\Elements\ApplicationGroupTree.lua
@@ -200,42 +197,33 @@ Core\UI\Elements\SelectionScrollingTable.lua
 Core\UI\Elements\AuctionScrollingTable.lua
 Core\UI\Elements\SniperScrollingTable.lua
 Core\UI\Elements\ProfessionScrollingTable.lua
-
 Core\UI\Elements\ViewContainer.lua
 Core\UI\Elements\SimpleTabGroup.lua
 Core\UI\Elements\TabGroup.lua
-
 Core\UI\Support\TexturePacks.lua
-
 Core\UI\AuctionUI\Core.lua
 Core\UI\AuctionUI\BuyUtil.lua
 Core\UI\AuctionUI\Shopping.lua
 Core\UI\AuctionUI\Auctioning.lua
 Core\UI\AuctionUI\Sniper.lua
 Core\UI\AuctionUI\MyAuctions.lua
-
 Core\UI\DestroyingUI\Core.lua
-
 Core\UI\CraftingUI\Core.lua
 Core\UI\CraftingUI\Crafting.lua
 Core\UI\CraftingUI\Gathering.lua
 Core\UI\CraftingUI\CraftingReports.lua
-
 Core\UI\MailingUI\Core.lua
 Core\UI\MailingUI\Inbox.lua
 Core\UI\MailingUI\Send.lua
 Core\UI\MailingUI\Groups.lua
 Core\UI\MailingUI\Other.lua
-
 Core\UI\VendoringUI\Core.lua
 Core\UI\VendoringUI\Buy.lua
 Core\UI\VendoringUI\Sell.lua
 Core\UI\VendoringUI\Buyback.lua
 Core\UI\VendoringUI\Groups.lua
-
 Core\UI\MainUI\Core.lua
 Core\UI\MainUI\Dashboard.lua
-
 Core\UI\MainUI\Ledger\Core.lua
 Core\UI\MainUI\Ledger\Inventory.lua
 Core\UI\MainUI\Ledger\Common\Core.lua
@@ -246,9 +234,7 @@ Core\UI\MainUI\Ledger\Revenue\Resale.lua
 Core\UI\MainUI\Ledger\Expenses\Core.lua
 Core\UI\MainUI\Ledger\FailedAuctions\Core.lua
 Core\UI\MainUI\Ledger\Common\Auctions.lua
-
 Core\UI\MainUI\Groups.lua
-
 Core\UI\MainUI\Operations\Core.lua
 Core\UI\MainUI\Operations\Auctioning.lua
 Core\UI\MainUI\Operations\Shopping.lua
@@ -257,7 +243,6 @@ Core\UI\MainUI\Operations\Crafting.lua
 Core\UI\MainUI\Operations\Vendoring.lua
 Core\UI\MainUI\Operations\Mailing.lua
 Core\UI\MainUI\Operations\Warehousing.lua
-
 Core\UI\MainUI\Settings\Core.lua
 Core\UI\MainUI\Settings\General.lua
 Core\UI\MainUI\Settings\Accounting.lua
@@ -271,11 +256,8 @@ Core\UI\MainUI\Settings\Macros.lua
 Core\UI\MainUI\Settings\Shopping.lua
 Core\UI\MainUI\Settings\Vendoring.lua
 Core\UI\MainUI\Settings\Tooltip.lua
-
 Core\UI\TaskListUI\Core.lua
-
 Core\UI\BankingUI\Core.lua
-
 Core\UI\Debug\DBViewer.lua
 
 # Service files (depend on main addon file being loaded)
